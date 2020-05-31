@@ -1,0 +1,11 @@
+[Unit]
+Description=Garage service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/garage
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
