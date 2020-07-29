@@ -10,8 +10,8 @@ public:
 
     virtual void execute() override {
         LOG_DEBUG << "Executing pushbutton command";
-        digitalWrite(15, 1);
+        digitalWrite(25, 1);
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
-        digitalWrite(15, 0);
+        digitalWrite(25, 0);
     }
 };
